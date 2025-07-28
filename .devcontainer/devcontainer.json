@@ -24,6 +24,7 @@
     },
     "mounts": [
         "source=${env:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached",
+        "source=${env:HOME}/.ssh/config_no_keychain,target=/home/vscode/.ssh/config,type=bind,consistency=cached",
         "source=${env:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached"
     ],
     "postCreateCommand": "uv sync",
